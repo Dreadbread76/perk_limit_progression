@@ -37,7 +37,7 @@
 
 function main() {
     level flag::wait_till("initial_blackscreen_passed");
-	IPrintLnBold("Welcome to the mod");
+	//IPrintLnBold("Welcome to the mod");
 	first_round_delay = 10;
 	add_perk_slot_at_round(first_round_delay);
 	
@@ -45,10 +45,11 @@ function main() {
 function add_perk_slot_at_round(round_delay_count){
 	
 	round_delay = 10;
-	IPrintLnBold(round_delay_count);
+	//IPrintLnBold(round_delay_count);
 	if(round_delay_count == 0){
-		IPrintLnBold("Adding Perk Slot :)");
+		//IPrintLnBold("Adding Perk Slot :)");
 		round_delay_count = round_delay;
+		level.perk_purchase_limit += 1;
 	}
 	round_delay_count--;
 	level waittill("between_round_over");
