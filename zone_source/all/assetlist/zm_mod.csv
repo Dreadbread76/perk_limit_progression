@@ -1,0 +1,4 @@
+rawfile,dummy.cfg
+scriptparsetree,scripts/zm/_load.gsc
+scriptparsetree,scripts/zm/_zm_mod.gsc
+keyvaluepairs,zm_mod
