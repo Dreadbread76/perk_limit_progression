@@ -17,6 +17,7 @@
 #using scripts\zm\_zm;
 #using scripts\zm\_zm_audio;
 #using scripts\zm\_zm_perks;
+#using scripts\zm\_zm_perk_random;
 #using scripts\zm\_zm_powerups;
 #using scripts\zm\_zm_weapons;
 #using scripts\zm\_zm_score;
@@ -39,8 +40,19 @@ function main() {
     level flag::wait_till("initial_blackscreen_passed");
 	//IPrintLnBold("Welcome to the mod");
 	first_round_delay = 10;
-	add_perk_slot_at_round(first_round_delay);
-	
+	thread add_perk_slot_at_round(first_round_delay);
+	thread add_perks_in_wunderfizz();
+}
+function add_perks_in_wunderfizz(){
+	zm_perk_random::include_perk_in_random_rotation("specialty_quickrevive");
+	zm_perk_random::include_perk_in_random_rotation("specialty_armorvest");
+	zm_perk_random::include_perk_in_random_rotation("specialty_doubletap2");
+	zm_perk_random::include_perk_in_random_rotation("specialty_fastreload");
+	zm_perk_random::include_perk_in_random_rotation("specialty_deadshot");
+	zm_perk_random::include_perk_in_random_rotation("specialty_staminup");
+	zm_perk_random::include_perk_in_random_rotation("specialty_additionalprimaryweapon");
+	zm_perk_random::include_perk_in_random_rotation("specialty_electriccherry");
+	zm_perk_random::include_perk_in_random_rotation("specialty_widowswine");
 }
 function add_perk_slot_at_round(round_delay_count){
 	

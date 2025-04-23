@@ -120,7 +120,7 @@ function start_mod()
         wait 2;
 
     ;
-	IPrintLnBold("Printing");
+	//IPrintLnBold("Printing");
 	zm_mod::main();
 }
 function footsteps()

@@ -14,7 +14,7 @@ scriptparsetree,scripts/zm/_load.gsc
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1722814317,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\version.gsh,1722814425,
 scriptparsetree,scripts/zm/_zm_mod.gsc
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_mod.gsc,1745395889,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_mod.gsc,1745409474,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1722814317,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\statstable_shared.gsh,1722814425,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\version.gsh,1722814425,
@@ -23,7 +23,7 @@ scriptparsetree,scripts/zm/_zm_mod.gsc
 texturecombo,zm_mod
 assetlist,zm_mod
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\gamedata\playeranim\playeranimtypes.txt,1722814251,
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\zone_source\zm_mod.zone,1745381953,2411d7e4,9e810ea8,7f361279,dec99983
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\zone_source\zm_mod.zone,1745409612,2411d7e4,9e810ea8,7f361279,dec99983
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\zm_mod.class,1722814316,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\mod_default.class,1722814430,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\default.class,1722814336,
