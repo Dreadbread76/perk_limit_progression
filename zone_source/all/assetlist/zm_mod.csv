@@ -1,4 +1,6 @@
 rawfile,dummy.cfg
 scriptparsetree,scripts/zm/_load.gsc
 scriptparsetree,scripts/zm/_zm_mod.gsc
+scriptparsetree,scripts/zm/_zm_perk_electric_cherry.csc
+scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc
 keyvaluepairs,zm_mod

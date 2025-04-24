@@ -67,6 +67,8 @@
 
 //Weapon registration
 #using scripts\zm\gametypes\_weaponobjects;
+//Perks 
+#using scripts\zm\_zm_perk_electric_cherry;
 
 #precache( "fx", "_t6/bio/player/fx_footstep_dust" );
 #precache( "fx", "_t6/bio/player/fx_footstep_sand" );
@@ -85,8 +87,8 @@ function main()
 
 	level.aiTriggerSpawnFlags = getaitriggerflags();
 	level.vehicleTriggerSpawnFlags = getvehicletriggerflags();
-		
 	level thread start_intro_screen_zm();
+	level thread add_perks();
 
 	//thread _spawning::init();
 	//thread _deployable_weapons::init();
@@ -122,6 +124,9 @@ function start_mod()
     ;
 	//IPrintLnBold("Printing");
 	zm_mod::main();
+}
+function  add_perks(){
+	zm_perk_electric_cherry::enable_electric_cherry_perk_for_level();
 }
 function footsteps()
 {
