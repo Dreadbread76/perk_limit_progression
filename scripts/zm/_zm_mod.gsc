@@ -39,7 +39,7 @@
 function main() {
     level flag::wait_till("initial_blackscreen_passed");
 	//IPrintLnBold("Welcome to the mod");
-	first_round_delay = 10;
+	first_round_delay = 9;
 	thread add_perk_slot_at_round(first_round_delay);
 	thread add_perks_in_wunderfizz();
 }
