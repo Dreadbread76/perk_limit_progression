@@ -9,16 +9,15 @@
 
 #using scripts\zm\_zm_perks;
 
+#insert scripts\zm\_zm_perk_electric_cherry.gsh;
 #insert scripts\zm\_zm_perks.gsh;
 #insert scripts\zm\_zm_utility.gsh;
 
-#define ELECTRIC_CHERRY_MACHINE_LIGHT_FX	"electric_light"	
-
-#precache( "client_fx", "_t6/misc/fx_zombie_cola_revive_on" );
+#precache( "client_fx", "perklighting_cw/fx_perk_cherry_light_cw" );
 #precache( "client_fx", "dlc1/castle/fx_castle_electric_cherry_down" );
 #precache( "client_fx", "dlc1/castle/fx_castle_electric_cherry_trail" );
 #precache( "client_fx", "zombie/fx_tesla_shock_zmb" );
-#precache( "client_fx", "zombie/fx_tesla_shock_eyes_zmb");
+#precache( "client_fx", "zombie/fx_tesla_shock_eyes_zmb"	);
 
 #namespace zm_perk_electric_cherry;
 
@@ -38,7 +37,7 @@ function init_electric_cherry()
 {
 	if( IS_TRUE(level.enable_magic) )
 	{
-		level._effect[ELECTRIC_CHERRY_MACHINE_LIGHT_FX]	= "_t6/misc/fx_zombie_cola_revive_on";
+		level._effect["cherry_light"]	= "perklighting_cw/fx_perk_cherry_light_cw";
 	}
 	
 	// Register Clientfields

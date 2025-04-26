@@ -10,32 +10,44 @@ ignore_missing_shipped,zm_patch
 rawfile,dummy.cfg
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\dummy.cfg,1722815216,
 scriptparsetree,scripts/zm/_load.gsc
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_load.gsc,1745475909,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_load.gsc,1745634805,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1722814317,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\version.gsh,1722814425,
+scriptparsetree,scripts/zm/_load.csc
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_load.csc,1745636034,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1722814317,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\version.gsh,1722814425,
 scriptparsetree,scripts/zm/_zm_mod.gsc
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_mod.gsc,1745476004,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_mod.gsc,1745636397,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1722814317,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\statstable_shared.gsh,1722814425,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\version.gsh,1722814425,
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_perks.gsh,1722814329,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_perks.gsh,1656525077,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_utility.gsh,1722813396,
-scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_perk_electric_cherry.gsc,1745473906,
+scriptparsetree,scripts/zm/_zm_mod.csc
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_mod.csc,1745591015,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1722814317,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\version.gsh,1722814425,
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_perks.gsh,1722814329,
+scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_perk_electric_cherry.gsc,1647128724,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1722814317,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\version.gsh,1722814425,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_perk_electric_cherry.gsh,1716927103,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_perks.gsh,1656525077,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_utility.gsh,1722813396,
 scriptparsetree,scripts/zm/_zm_perk_electric_cherry.csc
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_perk_electric_cherry.csc,1745473648,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_perk_electric_cherry.csc,1647128739,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1722814317,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\version.gsh,1722814425,
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_perks.gsh,1722814329,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_perk_electric_cherry.gsh,1716927103,
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_perks.gsh,1656525077,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_utility.gsh,1722813396,
+scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsh
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\scripts\zm\_zm_perk_electric_cherry.gsh,1716927103,
 texturecombo,zm_mod
 assetlist,zm_mod
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\gamedata\playeranim\playeranimtypes.txt,1722814251,
-	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\zone_source\zm_mod.zone,1745476046,da34d872,d8dd8f79,ab9b59fa,608bf646
+	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\perk_limit_progression\zone_source\zm_mod.zone,1745631691,0edca6e2,188627f9,665dde08,309be675
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\zm_mod.class,1722814316,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\mod_default.class,1722814430,
 	file,F:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\default.class,1722814336,

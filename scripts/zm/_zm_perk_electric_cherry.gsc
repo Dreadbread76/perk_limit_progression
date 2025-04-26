@@ -23,36 +23,25 @@
 #using scripts\zm\_zm_stats;
 #using scripts\zm\_zm_utility;
 
+#insert scripts\zm\_zm_perk_electric_cherry.gsh;
 #insert scripts\zm\_zm_perks.gsh;
 #insert scripts\zm\_zm_utility.gsh;
-
-//TODO update these to proper settings
-#define ELECTRIC_CHERRY_PERK_COST                   1500
-#define ELECTRIC_CHERRY_PERK_BOTTLE_WEAPON          "zombie_perk_bottle_cherry"
-#define ELECTRIC_CHERRY_SHADER                      "specialty_blue_electric_cherry_zombies"
-#define ELECTRIC_CHERRY_MACHINE_DISABLED_MODEL      "p6_zm_vending_electric_cherry_off" 
-//                                                   ^^ Change this to your OFF xmodel
-#define ELECTRIC_CHERRY_MACHINE_ACTIVE_MODEL        "p6_zm_vending_electric_cherry_on" 
-//                                                   ^^ Change this to your ON xmodel
-#define ELECTRIC_CHERRY_RADIANT_MACHINE_NAME        "vending_electriccherry"
-#define ELECTRIC_CHERRY_MACHINE_LIGHT_FX            "electric_cherry_light" 
-
 
 // Global Attack Variables
 #define ELECTRIC_CHERRY_STUN_CYCLES			4
 // Last Stand Attack
 #define ELECTRIC_CHERRY_DOWNED_ATTACK_RADIUS 500
-#define ELECTRIC_CHERRY_DOWNED_ATTACK_DAMAGE 1000
+#define ELECTRIC_CHERRY_DOWNED_ATTACK_DAMAGE 2000
 #define ELECTRIC_CHERRY_DOWNED_ATTACK_POINTS 40
 // Reload Attack
 #define RELOAD_ATTACK_MIN_RADIUS 32
-#define RELOAD_ATTACK_MAX_RADIUS 128
-#define RELOAD_ATTACK_MIN_DAMAGE 1
+#define RELOAD_ATTACK_MAX_RADIUS 196
+#define RELOAD_ATTACK_MIN_DAMAGE 250
 #define RELOAD_ATTACK_MAX_DAMAGE 1045 // Max damage = zombie health at round 10
 #define RELOAD_ATTACK_POINTS 40
 #define RELOAD_ATTACK_COOLDOWN_TIMER 3
 
-#precache( "fx", "_t6/misc/fx_zombie_cola_revive_on" );
+#precache( "fx", "perklighting_cw/fx_perk_cherry_light_cw" );
 #precache( "fx", "dlc1/castle/fx_castle_electric_cherry_down" );
 
 #namespace zm_perk_electric_cherry;
@@ -71,7 +60,7 @@ function __init__()
 
 function enable_electric_cherry_perk_for_level()
 {	
-	// register ec perk for level
+	// register electric cherry perk for level
 	zm_perks::register_perk_basic_info( PERK_ELECTRIC_CHERRY, "electric_cherry", ELECTRIC_CHERRY_PERK_COST, "Hold ^3[{+activate}]^7 for Electric Cherry [Cost: &&1]", GetWeapon( ELECTRIC_CHERRY_PERK_BOTTLE_WEAPON ) );
 	zm_perks::register_perk_precache_func( PERK_ELECTRIC_CHERRY, &electric_cherry_precache );
 	zm_perks::register_perk_clientfields( PERK_ELECTRIC_CHERRY, &electric_cherry_register_clientfield, &electric_cherry_set_clientfield );
@@ -96,7 +85,7 @@ function electric_cherry_precache()
 		return;
 	}
 	
-	level._effect[ELECTRIC_CHERRY_MACHINE_LIGHT_FX] = "_t6/misc/fx_zombie_cola_revive_on";
+	level._effect[ELECTRIC_CHERRY_MACHINE_LIGHT_FX] = "perklighting_cw/fx_perk_cherry_light_cw";
 	
 	level.machine_assets[PERK_ELECTRIC_CHERRY] = SpawnStruct();
 	level.machine_assets[PERK_ELECTRIC_CHERRY].weapon = GetWeapon( ELECTRIC_CHERRY_PERK_BOTTLE_WEAPON );
@@ -127,7 +116,6 @@ function electric_cherry_perk_machine_setup( use_trigger, perk_machine, bump_tri
 		bump_trigger.script_string = "electriccherry_perk";
 	}
 }
-
 //-----------------------------------------------------------------------------------
 // functionality
 //-----------------------------------------------------------------------------------

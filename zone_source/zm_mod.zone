@@ -11,9 +11,12 @@ rawfile,dummy.cfg
 //xmodel,p6_zm_vending_electric_cherry_on
 
 scriptparsetree,scripts/zm/_load.gsc
+scriptparsetree,scripts/zm/_load.csc
 scriptparsetree,scripts/zm/_zm_mod.gsc
+scriptparsetree,scripts/zm/_zm_mod.csc
 scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc
 scriptparsetree,scripts/zm/_zm_perk_electric_cherry.csc
+scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsh
 //scriptparsetree,scripts/zm/zm_roundaddperkslot.gsc
 //scriptparsetree,scripts/zm/zm_roundaddperkslot.csc
 

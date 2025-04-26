@@ -70,6 +70,7 @@
 //Perks 
 #using scripts\zm\_zm_perk_electric_cherry;
 
+
 #precache( "fx", "_t6/bio/player/fx_footstep_dust" );
 #precache( "fx", "_t6/bio/player/fx_footstep_sand" );
 #precache( "fx", "_t6/bio/player/fx_footstep_mud" );
@@ -80,15 +81,16 @@
 function main()
 {
 	zm::init();
-	
+
+
 	level._loadStarted = true;
-	
 	register_clientfields();
 
 	level.aiTriggerSpawnFlags = getaitriggerflags();
 	level.vehicleTriggerSpawnFlags = getvehicletriggerflags();
 	level thread start_intro_screen_zm();
-	level thread add_perks();
+
+	//level thread add_perks();
 
 	//thread _spawning::init();
 	//thread _deployable_weapons::init();
@@ -108,7 +110,6 @@ function main()
 	system::wait_till( "all" );
 
 	level thread load::art_review();
-
  	level flagsys::set( "load_main_complete" );
 	thread start_mod();
 	
@@ -125,8 +126,16 @@ function start_mod()
 	//IPrintLnBold("Printing");
 	zm_mod::main();
 }
-function  add_perks(){
-	zm_perk_electric_cherry::enable_electric_cherry_perk_for_level();
+function autoexec init_electriccherry()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_electriccherry" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_electriccherry";
+}
+function add_perks(){
+	//
 }
 function footsteps()
 {
@@ -191,7 +200,8 @@ function register_clientfields()
 	
 	//clientfield::register( "world", "sndPrematch", VERSION_SHIP, 1, "int" );
 	//clientfield::register( "toplayer", "sndMelee", VERSION_SHIP, 1, "int" );
-	//clientfield::register( "toplayer", "sndEMP", VERSION_SHIP, 1, "int" );	
+	//clientfield::register( "toplayer", "sndEMP", VERSION_SHIP, 1, "int" );
+	
 	
 	clientfield::register( "allplayers", "zmbLastStand", VERSION_SHIP, 1, "int" );
 	//clientfield::register( "toplayer", "zmbLastStand", VERSION_SHIP, 1, "int" );
@@ -199,4 +209,6 @@ function register_clientfields()
 	clientfield::register( "clientuimodel", "zmhud.swordEnergy", VERSION_SHIP, 7, "float" ); // energy: 0 to 1
 	clientfield::register( "clientuimodel", "zmhud.swordState", VERSION_SHIP, 4, "int" ); // state: 0 = hidden, 1 = charging, 2 = ready, 3 = inuse, 4 = unavailable (grey), 5 = ele-charging, 6 = ele-ready, 7 = ele-inuse,
 	clientfield::register( "clientuimodel", "zmhud.swordChargeUpdate", VERSION_SHIP, 1, "counter" );
+	//zm_perk_electric_cherry::enable_electric_cherry_perk_for_level();
+
 }
