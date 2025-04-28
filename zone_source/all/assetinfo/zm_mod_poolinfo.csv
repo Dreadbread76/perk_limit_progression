@@ -3,12 +3,12 @@ physpreset,276,0
 physconstraints,128,0
 destructibledef,128,0
 xanim,25000,0
-xmodel,10240,0
-xmodelmesh,34816,0
-material,20480,0
+xmodel,10240,2
+xmodelmesh,34816,9
+material,20480,4
 computeshaderset,256,0
-techset,1024,0
-image,49152,0
+techset,1024,4
+image,49152,19
 sound,32,0
 sound_patch,16,0
 col_map,2,0
@@ -22,7 +22,7 @@ ui_map,0,0
 font,16,0
 fonticon,16,0
 localize,25600,0
-weapon,1536,0
+weapon,1536,1
 weapondef,0,0
 weaponvariant,0,0
 weaponfull,0,0
@@ -88,7 +88,7 @@ bgcache,32,1
 texturecombo,16,0
 flametable,16,0
 bitfield,52,0
-attachmentcosmeticvariant,640,0
+attachmentcosmeticvariant,640,1
 maptable,25,0
 maptableloadingimages,25,0
 medal,768,0

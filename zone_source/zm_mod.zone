@@ -7,16 +7,26 @@
 rawfile,dummy.cfg
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//ELECTRIC CHERRY
+
 //xmodel,p6_zm_vending_electric_cherry_off
 //xmodel,p6_zm_vending_electric_cherry_on
+xmodel,wpn_t7_zmb_perk_bottle_cherry_world
+xmodel,wpn_t7_zmb_perk_bottle_cherry_view
+weapon,zombie_perk_bottle_cherry
+image,specialty_blue_electric_cherry_zombies
+fx,fx_castle_electric_cherry_down
+fx,fx_castle_electric_cherry_trail
+
+scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc
+scriptparsetree,scripts/zm/_zm_perk_electric_cherry.csc
+scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsh
 
 scriptparsetree,scripts/zm/_load.gsc
 scriptparsetree,scripts/zm/_load.csc
 scriptparsetree,scripts/zm/_zm_mod.gsc
 scriptparsetree,scripts/zm/_zm_mod.csc
-scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc
-scriptparsetree,scripts/zm/_zm_perk_electric_cherry.csc
-scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsh
+
 //scriptparsetree,scripts/zm/zm_roundaddperkslot.gsc
 //scriptparsetree,scripts/zm/zm_roundaddperkslot.csc
 

@@ -57,7 +57,7 @@ function add_perks_in_wunderfizz(){
 	zm_perk_random::include_perk_in_random_rotation("specialty_deadshot");
 	zm_perk_random::include_perk_in_random_rotation("specialty_staminup");
 	zm_perk_random::include_perk_in_random_rotation("specialty_additionalprimaryweapon");
-	//zm_perk_random::include_perk_in_random_rotation("specialty_electriccherry");
+	zm_perk_random::include_perk_in_random_rotation("specialty_electriccherry");
 	zm_perk_random::include_perk_in_random_rotation("specialty_widowswine");
 }
 function add_perk_slot_at_round(round_delay_count){

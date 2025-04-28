@@ -1,7 +1,7 @@
 // ELECTRIC CHERRY SETTINGS
 //
 
-#define ELECTRIC_CHERRY_PERK_COST					2000
+#define ELECTRIC_CHERRY_PERK_COST					1500
 #define ELECTRIC_CHERRY_PERK_BOTTLE_WEAPON			"zombie_perk_bottle_cherry"
 #define ELECTRIC_CHERRY_SHADER						"specialty_blue_electric_cherry_zombies"
 #define ELECTRIC_CHERRY_MACHINE_DISABLED_MODEL		"p6_sur_machine_cherry"

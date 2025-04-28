@@ -1,0 +1,39 @@
+return 10000000
+^1ERROR: xanim asset vm_perk_bottle_t7_idle has no XANIM_BIN file specified or doesn't exist.
+  xanim:vm_perk_bottle_t7_idle
+    weapon:zombie_perk_bottle_cherry
+      csv:zone_source/zm_mod.zone
+^1ERROR: xanim 'vm_perk_bottle_t7_idle' not found
+  xanim:vm_perk_bottle_t7_idle
+    weapon:zombie_perk_bottle_cherry
+      csv:zone_source/zm_mod.zone
+^1ERROR: xanim asset vm_perk_bottle_t7_drink_shot has no XANIM_BIN file specified or doesn't exist.
+  xanim:vm_perk_bottle_t7_drink_shot
+    weapon:zombie_perk_bottle_cherry
+      csv:zone_source/zm_mod.zone
+^1ERROR: xanim 'vm_perk_bottle_t7_drink_shot' not found
+  xanim:vm_perk_bottle_t7_drink_shot
+    weapon:zombie_perk_bottle_cherry
+      csv:zone_source/zm_mod.zone
+^1ERROR: xanim asset vm_perk_bottle_t7_ads_up has no XANIM_BIN file specified or doesn't exist.
+  xanim:vm_perk_bottle_t7_ads_up
+    weapon:zombie_perk_bottle_cherry
+      csv:zone_source/zm_mod.zone
+^1ERROR: xanim 'vm_perk_bottle_t7_ads_up' not found
+  xanim:vm_perk_bottle_t7_ads_up
+    weapon:zombie_perk_bottle_cherry
+      csv:zone_source/zm_mod.zone
+^1ERROR: xanim asset vm_perk_bottle_t7_ads_down has no XANIM_BIN file specified or doesn't exist.
+  xanim:vm_perk_bottle_t7_ads_down
+    weapon:zombie_perk_bottle_cherry
+      csv:zone_source/zm_mod.zone
+^1ERROR: xanim 'vm_perk_bottle_t7_ads_down' not found
+  xanim:vm_perk_bottle_t7_ads_down
+    weapon:zombie_perk_bottle_cherry
+      csv:zone_source/zm_mod.zone
+^1Effect 'fx/fx_castle_electric_cherry_down.efx' not found
+  fx:fx_castle_electric_cherry_down
+    csv:zone_source/zm_mod.zone
+^1Effect 'fx/fx_castle_electric_cherry_trail.efx' not found
+  fx:fx_castle_electric_cherry_trail
+    csv:zone_source/zm_mod.zone
