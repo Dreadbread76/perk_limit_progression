@@ -15,8 +15,8 @@ xmodel,wpn_t7_zmb_perk_bottle_cherry_world
 xmodel,wpn_t7_zmb_perk_bottle_cherry_view
 weapon,zombie_perk_bottle_cherry
 image,specialty_blue_electric_cherry_zombies
-//fx,fx_castle_electric_cherry_down
-//fx,fx_castle_electric_cherry_trail
+fx,dlc1/castle/fx_castle_electric_cherry_down
+fx,dlc1/castle/fx_castle_electric_cherry_trail
 
 scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc
 scriptparsetree,scripts/zm/_zm_perk_electric_cherry.csc

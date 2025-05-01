@@ -41,7 +41,7 @@
 function main() {
     level flag::wait_till("initial_blackscreen_passed");
 	//IPrintLnBold("Welcome to the mod");
-	first_round_delay = 2;
+	first_round_delay = 9;
 	thread add_perks_in_map();
 	thread add_perk_slot_at_round(first_round_delay);
 }
@@ -62,7 +62,7 @@ function add_perks_in_wunderfizz(){
 }
 function add_perk_slot_at_round(round_delay_count){
 	
-	round_delay = 2;
+	round_delay = 10;
 	//IPrintLnBold(round_delay_count);
 	if(round_delay_count == 0){
 		//IPrintLnBold("Adding Perk Slot :)");
