@@ -30,9 +30,11 @@
 #using scripts\zm\_zm_blockers;
 
 #using scripts\shared\aat_shared;
+#using scripts\zm\_zm_perk_electric_cherry;
 
 #insert scripts\zm\_zm_perks.gsh;
 #insert scripts\zm\_zm_utility.gsh;
+
 
 #namespace zm_mod;
 
@@ -40,7 +42,11 @@ function main() {
     level flag::wait_till("initial_blackscreen_passed");
 	//IPrintLnBold("Welcome to the mod");
 	first_round_delay = 9;
+	thread add_perks_in_map();
 	thread add_perk_slot_at_round(first_round_delay);
+}
+function add_perks_in_map()
+{
 	thread add_perks_in_wunderfizz();
 }
 function add_perks_in_wunderfizz(){
@@ -51,7 +57,7 @@ function add_perks_in_wunderfizz(){
 	zm_perk_random::include_perk_in_random_rotation("specialty_deadshot");
 	zm_perk_random::include_perk_in_random_rotation("specialty_staminup");
 	zm_perk_random::include_perk_in_random_rotation("specialty_additionalprimaryweapon");
-	//zm_perk_random::include_perk_in_random_rotation("specialty_electriccherry");
+	zm_perk_random::include_perk_in_random_rotation("specialty_electriccherry");
 	zm_perk_random::include_perk_in_random_rotation("specialty_widowswine");
 }
 function add_perk_slot_at_round(round_delay_count){
