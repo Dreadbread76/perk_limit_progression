@@ -17,7 +17,7 @@
 #using scripts\zm\_zm;
 #using scripts\zm\_zm_audio;
 #using scripts\zm\_zm_perks;
-#using scripts\zm\_zm_perk_random;
+//#using scripts\zm\_zm_perk_random;
 #using scripts\zm\_zm_powerups;
 #using scripts\zm\_zm_weapons;
 #using scripts\zm\_zm_score;
@@ -30,7 +30,7 @@
 #using scripts\zm\_zm_blockers;
 
 #using scripts\shared\aat_shared;
-#using scripts\zm\_zm_perk_electric_cherry;
+//#using scripts\zm\_zm_perk_electric_cherry;
 
 #insert scripts\zm\_zm_perks.gsh;
 #insert scripts\zm\_zm_utility.gsh;
@@ -50,7 +50,7 @@ function add_perks_in_map()
 	thread add_perks_in_wunderfizz();
 }
 function add_perks_in_wunderfizz(){
-	zm_perk_random::include_perk_in_random_rotation("specialty_quickrevive");
+	/*zm_perk_random::include_perk_in_random_rotation("specialty_quickrevive");
 	zm_perk_random::include_perk_in_random_rotation("specialty_armorvest");
 	zm_perk_random::include_perk_in_random_rotation("specialty_doubletap2");
 	zm_perk_random::include_perk_in_random_rotation("specialty_fastreload");
@@ -58,7 +58,7 @@ function add_perks_in_wunderfizz(){
 	zm_perk_random::include_perk_in_random_rotation("specialty_staminup");
 	zm_perk_random::include_perk_in_random_rotation("specialty_additionalprimaryweapon");
 	zm_perk_random::include_perk_in_random_rotation("specialty_electriccherry");
-	zm_perk_random::include_perk_in_random_rotation("specialty_widowswine");
+	zm_perk_random::include_perk_in_random_rotation("specialty_widowswine");*/
 }
 function add_perk_slot_at_round(round_delay_count){
 	
