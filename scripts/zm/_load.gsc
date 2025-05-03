@@ -126,6 +126,62 @@ function start_mod()
 	//IPrintLnBold("Printing");
 	zm_mod::main();
 }
+function autoexec init_juggernog()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_armorvest" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_armorvest";
+}
+function autoexec init_quickrevive()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_quickrevive" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_quickrevive";
+}
+function autoexec init_speedcola()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_fastreload" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_fastreload";
+}
+function autoexec init_doubletap()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_doubletap2" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_doubletap2";
+}
+function autoexec init_mulekick()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_additionalprimaryweapon" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_additionalprimaryweapon";
+}
+function autoexec init_staminup()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_staminup" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_staminup";
+}
+function autoexec init_deadshot()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_deadshot" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_deadshot";
+}
 function autoexec init_electriccherry()
 {
     while( !isdefined( level._random_perk_machine_perk_list ) )
@@ -134,6 +190,15 @@ function autoexec init_electriccherry()
     if( !IsInArray( keys, "specialty_electriccherry" ) )
       level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_electriccherry";
 }
+function autoexec init_widowswine()
+{
+    while( !isdefined( level._random_perk_machine_perk_list ) )
+        wait 1;
+    keys = GetArrayKeys( level._random_perk_machine_perk_list );
+    if( !IsInArray( keys, "specialty_widowswine" ) )
+      level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_widowswine";
+}
+
 function add_perks(){
 	//
 }

@@ -18,6 +18,9 @@ image,specialty_blue_electric_cherry_zombies
 fx,dlc1/castle/fx_castle_electric_cherry_down
 fx,dlc1/castle/fx_castle_electric_cherry_trail
 
+scriptparsetree,scripts/zm/_zm_perk_random.gsc
+scriptparsetree,scripts/zm/_zm_perk_random.csc
+
 scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc
 scriptparsetree,scripts/zm/_zm_perk_electric_cherry.csc
 scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsh
