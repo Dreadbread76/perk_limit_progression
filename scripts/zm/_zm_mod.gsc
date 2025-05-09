@@ -17,7 +17,6 @@
 #using scripts\zm\_zm;
 #using scripts\zm\_zm_audio;
 #using scripts\zm\_zm_perks;
-//#using scripts\zm\_zm_perk_random;
 #using scripts\zm\_zm_powerups;
 #using scripts\zm\_zm_weapons;
 #using scripts\zm\_zm_score;
@@ -30,7 +29,6 @@
 #using scripts\zm\_zm_blockers;
 
 #using scripts\shared\aat_shared;
-//#using scripts\zm\_zm_perk_electric_cherry;
 
 #insert scripts\zm\_zm_perks.gsh;
 #insert scripts\zm\_zm_utility.gsh;
@@ -40,37 +38,23 @@
 
 function main() {
     level flag::wait_till("initial_blackscreen_passed");
-	//IPrintLnBold("Welcome to the mod");
+	IPrintLnBold("zm_mod initialised");
 	first_round_delay = 9;
-	thread add_perks_in_map();
 	thread add_perk_slot_at_round(first_round_delay);
 }
-function add_perks_in_map()
-{
-	thread add_perks_in_wunderfizz();
-}
-function add_perks_in_wunderfizz(){
-	/*zm_perk_random::include_perk_in_random_rotation("specialty_quickrevive");
-	zm_perk_random::include_perk_in_random_rotation("specialty_armorvest");
-	zm_perk_random::include_perk_in_random_rotation("specialty_doubletap2");
-	zm_perk_random::include_perk_in_random_rotation("specialty_fastreload");
-	zm_perk_random::include_perk_in_random_rotation("specialty_deadshot");
-	zm_perk_random::include_perk_in_random_rotation("specialty_staminup");
-	zm_perk_random::include_perk_in_random_rotation("specialty_additionalprimaryweapon");
-	zm_perk_random::include_perk_in_random_rotation("specialty_electriccherry");
-	zm_perk_random::include_perk_in_random_rotation("specialty_widowswine");*/
-}
+
 function add_perk_slot_at_round(round_delay_count){
 	
 	round_delay = 10;
-	//IPrintLnBold(round_delay_count);
+	IPrintLnBold(round_delay_count);
 	if(round_delay_count == 0){
-		//IPrintLnBold("Adding Perk Slot :)");
+		IPrintLnBold("Adding Perk Slot :)");
+		// Everything before this point works fine
 		round_delay_count = round_delay;
 		level.perk_purchase_limit += 1;
 	}
 	round_delay_count--;
-	level waittill("between_round_over");
+	level waittill("end_of_round");
 	add_perk_slot_at_round(round_delay_count);
 }
 

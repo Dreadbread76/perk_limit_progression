@@ -81,7 +81,7 @@
 function main()
 {
 	zm::init();
-
+	level.get_player_perk_purchase_limit = &get_player_perk_purchase_limit;
 
 	level._loadStarted = true;
 	register_clientfields();
@@ -123,7 +123,7 @@ function start_mod()
         wait 2;
 
     ;
-	//IPrintLnBold("Printing");
+	IPrintLnBold("Mod Started");
 	zm_mod::main();
 }
 function autoexec init_juggernog()
@@ -199,8 +199,9 @@ function autoexec init_widowswine()
       level._random_perk_machine_perk_list[level._random_perk_machine_perk_list.size] = "specialty_widowswine";
 }
 
-function add_perks(){
-	//
+function get_player_perk_purchase_limit()
+{
+	return level.perk_purchase_limit + ( ( isDefined( self.n_additional_perk_slots ) && self.n_additional_perk_slots > 0 ) ? self.n_additional_perk_slots : 0 );
 }
 function footsteps()
 {

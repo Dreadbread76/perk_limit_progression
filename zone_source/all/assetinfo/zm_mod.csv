@@ -141,10 +141,10 @@ index,type,name,resident,streamed,parentStack
 140,scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsc,9924,0,|zone_source/zm_mod.zone|csv
 141,scriptparsetree,scripts/zm/_zm_perk_electric_cherry.csc,4102,0,|zone_source/zm_mod.zone|csv
 142,scriptparsetree,scripts/zm/_zm_perk_electric_cherry.gsh,154,0,|zone_source/zm_mod.zone|csv
-143,scriptparsetree,scripts/zm/_load.gsc,6540,0,|zone_source/zm_mod.zone|csv
-144,scriptparsetree,scripts/zm/_load.csc,2684,0,|zone_source/zm_mod.zone|csv
-145,scriptparsetree,scripts/zm/_zm_mod.gsc,1264,0,|zone_source/zm_mod.zone|csv
-146,scriptparsetree,scripts/zm/_zm_mod.csc,584,0,|zone_source/zm_mod.zone|csv
+143,scriptparsetree,scripts/zm/_load.gsc,6676,0,|zone_source/zm_mod.zone|csv
+144,scriptparsetree,scripts/zm/_load.csc,2688,0,|zone_source/zm_mod.zone|csv
+145,scriptparsetree,scripts/zm/_zm_mod.gsc,1292,0,|zone_source/zm_mod.zone|csv
+146,scriptparsetree,scripts/zm/_zm_mod.csc,608,0,|zone_source/zm_mod.zone|csv
 147,keyvaluepairs,zm_mod,2284,0,||assetlist
 148,bgcache,zm_mod,2907,0,||assetlist
 149,image,specialty_blue_electric_cherry_zombies,4247,0,|zone_source/zm_mod.zone|csv
